@@ -1,0 +1,80 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Add_patient</servlet-name>
+  	<display-name>Add_patient</display-name>
+  	<description></description>
+  	<servlet-class>patient_app.view.Add_patient</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SuccessView</servlet-name>
+  	<display-name>SuccessView</display-name>
+  	<description></description>
+  	<servlet-class>patient_app.view.SuccessView</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ErrorView</servlet-name>
+  	<display-name>ErrorView</display-name>
+  	<description></description>
+  	<servlet-class>patient_app.view.ErrorView</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListPatients</servlet-name>
+  	<display-name>ListPatients</display-name>
+  	<description></description>
+  	<servlet-class>patient_app.view.ListPatients</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FetchData</servlet-name>
+  	<display-name>FetchData</display-name>
+  	<description></description>
+  	<servlet-class>patient_app.view.FetchData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Add_patient</servlet-name>
+  	<url-pattern>/Add_patient</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Add_patient</servlet-name>
+  	<url-pattern>/patient_registration.view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SuccessView</servlet-name>
+  	<url-pattern>/SuccessView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SuccessView</servlet-name>
+  	<url-pattern>/success.view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ErrorView</servlet-name>
+  	<url-pattern>/ErrorView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ErrorView</servlet-name>
+  	<url-pattern>/error.view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListPatients</servlet-name>
+  	<url-pattern>/ListPatients</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListPatients</servlet-name>
+  	<url-pattern>/list_patients.view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FetchData</servlet-name>
+  	<url-pattern>/FetchData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FetchData</servlet-name>
+  	<url-pattern>/identifyById</url-pattern>
+  </servlet-mapping>
+   <welcome-file-list>
+  	<welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+</web-app>
